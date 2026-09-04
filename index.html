@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronómetro de Combate</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cronómetro de entrenamiento</h1>
+      <p id="fase">Prepárate</p>
+      <p id="display-tiempo">00:00</p>
+      <div>
+        <button id="btn-iniciar" type="button">Iniciar</button>
+        <button id="btn-pausar" type="button">Pausar</button>
+        <button id="btn-reiniciar" type="button">Reiniciar</button>
+      </div>
+      <form>
+        <fieldset>
+          <legend>Configuración</legend>
+
+          <label for="input-rounds">Número de rounds:</label>
+          <input type="number" id="input-rounds" min="1" value="3" />
+
+          <label for="input-duracion-round">Duración de cada round:</label>
+          <input type="number" id="input-duracion-round" min="1" value="180" />
+
+          <label for="input-duracion-descanso">
+            Duración de cada descanso:
+          </label>
+          <input
+            type="number"
+            id="input-duracion-descanso"
+            min="1"
+            value="60"
+          />
+        </fieldset>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
